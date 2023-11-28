@@ -1,5 +1,6 @@
 package application;
 
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -37,7 +38,12 @@ public class Program {
 			System.out.println(obj);
 			
 		}
+
 		
+		System.out.println("==== 4 teste-insert");
+		Seller newSwller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
+		sellerDao.insert(newSwller);
+		System.out.println("Insert new id: " + newSwller.getId());
 	}
 
 }
