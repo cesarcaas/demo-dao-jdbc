@@ -31,6 +31,13 @@ public class Program {
 			
 		}
 
+		System.out.println("==== 3 teste");
+		list = sellerDao.findAll();
+		for (Seller obj : list) {
+			System.out.println(obj);
+			
+		}
+		
 	}
 
 }
